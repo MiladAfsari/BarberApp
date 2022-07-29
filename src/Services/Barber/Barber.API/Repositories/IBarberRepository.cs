@@ -5,10 +5,10 @@ namespace Barber.API.Repositories
 {
     public interface IBarberRepository
     {
-        Task<HairDresser> GetBarber(string MeliNo);
+        Task<HairDresser> GetBarber(string Id);
         Task<bool> CreateBarber(HairDresser barber);
         Task<bool> UpdateBarber(HairDresser barber);
-        Task<bool> DeleteBarber(string MeliNo);
+        Task<bool> DeleteBarber(string Id);
 
     }
 }
